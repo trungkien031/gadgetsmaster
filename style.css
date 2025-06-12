@@ -1,106 +1,208 @@
-.container {
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container{
     margin-bottom: 80px;
 }
 
-.bg-color {
-    background-color: transparent;
+.bg-color{
+    background-color: none;
 }
 
-.bg-image {
-    background-image: url('https://via.placeholder.com/1200x400?text=Hero+Image');
+.bg-image{
+    background-image: url(images/back-2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
 }
 
-.col-md-5 {
+/* Navbar Styles */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.cart-icon svg {
+    color: #333;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    z-index: 1000;
+    width: 300px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.cart-dropdown.show {
+    display: block;
+}
+
+/* Carousel Styles */
+.col-md-5{
     color: white;
+    padding: 20px;
 }
 
-.button-color {
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Button Styles */
+.button-color{
     color: white;
     background-color: black;
     border-radius: 5px;
     padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
     border: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .button-color:hover {
     background-color: #333;
-    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-.see-all-margin {
+/* Product Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Category Box Styles */
+.see-all-margin{
     text-align: right;
-    color: orange;
 }
 
-.see-all-margin a {
+.see-all-link {
     color: orange;
     text-decoration: none;
 }
 
-.see-all-margin a:hover {
+.see-all-link:hover {
     text-decoration: underline;
 }
 
-.margin-down {
+.margin-down{
     margin-bottom: 40px;
 }
 
-.alignment-cat {
+.alignment-cat{
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.line-up {
+.line-up{
     height: 10px;
     width: 150px;
     border-radius: 6px;
     background-image: linear-gradient(45deg, rgb(251, 255, 22), rgb(255, 102, 0));
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 
-.box {
+.box{
     box-shadow: 5px 5px 15px grey;
     padding: 45px 60px;
     border-radius: 0px 10px 0px 30px;
     margin-right: 20px;
     margin-top: 60px;
-    background-color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-footer {
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer{
     color: orchid;
     text-align: center;
+    background-color: #f8f9fa;
     padding: 20px 0;
-    background-color: #f8f8f8;
+    margin-top: 50px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.slider .box {
-    margin: 0 10px;
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
     .bg-image {
-        padding: 50px 0;
+        padding: 15px;
     }
-
+    
+    .col-md-5, .col-md-7 {
+        text-align: center;
+    }
+    
     .box {
-        margin-right: 0;
-        padding: 20px;
-        margin-top: 20px;
+        padding: 30px;
+        margin: 20px 0;
     }
-
-    .col-md-4 {
+    
+    .card-deck {
+        display: block;
+    }
+    
+    .card {
         margin-bottom: 20px;
     }
+    
+    .cart-dropdown {
+        width: 90%;
+        left: 5%;
+        right: auto;
+    }
+}
+
+/* Slick Slider Custom Styles */
+.slick-prev:before, 
+.slick-next:before {
+    color: black;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
 }
