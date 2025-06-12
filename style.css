@@ -2,6 +2,10 @@
     margin-bottom: 80px;
 }
 
+.bg-color {
+    background-color: transparent;
+}
+
 .bg-image {
     background-image: url('https://via.placeholder.com/1200x400?text=Hero+Image');
     background-size: cover;
@@ -20,6 +24,7 @@
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
+    border: none;
     transition: background-color 0.3s;
 }
 
@@ -31,7 +36,6 @@
 .see-all-margin {
     text-align: right;
     color: orange;
-    font-weight: bold;
 }
 
 .see-all-margin a {
@@ -49,7 +53,6 @@
 
 .alignment-cat {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .line-up {
@@ -57,14 +60,15 @@
     width: 150px;
     border-radius: 6px;
     background-image: linear-gradient(45deg, rgb(251, 255, 22), rgb(255, 102, 0));
-    margin: 0 auto 20px;
+    margin: 0 auto;
 }
 
 .box {
     box-shadow: 5px 5px 15px grey;
-    padding: 20px;
+    padding: 45px 60px;
     border-radius: 0px 10px 0px 30px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
     background-color: white;
 }
 
@@ -75,18 +79,14 @@ footer {
     background-color: #f8f8f8;
 }
 
-.slider {
-    margin-top: 20px;
-}
-
-.slider .box {
-    margin: 0 10px;
-}
-
 .img-fluid {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.slider .box {
+    margin: 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -96,7 +96,8 @@ footer {
 
     .box {
         margin-right: 0;
-        padding: 15px;
+        padding: 20px;
+        margin-top: 20px;
     }
 
     .col-md-4 {
