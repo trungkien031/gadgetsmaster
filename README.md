@@ -1,1 +1,1 @@
-# gadgetsmaster
+# hot-gadgets
