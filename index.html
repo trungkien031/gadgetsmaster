@@ -4,161 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shop the latest smartphones, laptops, and electronics with great deals and warranty.">
-    <title>RAZz E-commerce - Shop Now</title>
+    <title>RAZz E-commerce</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">RAZz Shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ul class="nav justify-content-end">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#products">Product</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <main>
-        <section id="home" class="bg-image">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <h1>Welcome to RAZz Shop</h1>
-                        <p>Discover the latest in smartphones, laptops, and electronics with unbeatable deals.</p>
-                        <a href="#products" class="button-color">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="featured" class="container margin-down">
-            <h2 class="alignment-cat">Featured Products</h2>
-            <div class="line-up"></div>
-            <div class="slider">
-                <div class="box">
-                    <img src="https://via.placeholder.com/300x200?text=Macbook+Pro" alt="Macbook Pro" class="img-fluid">
-                    <h3>Macbook Pro</h3>
-                    <p>2020 model with M1 chip, 13-inch Retina display, 8GB RAM, and 512GB SSD.</p>
-                    <p><strong>$1299</strong></p>
-                    <button class="button-color add-to-cart" data-product="Macbook Pro" data-price="1299">Buy Now</button>
-                </div>
-                <div class="box">
-                    <img src="https://via.placeholder.com/300x200?text=Speaker" alt="Speaker" class="img-fluid">
-                    <h3>Speaker</h3>
-                    <p>High-quality loudspeaker with home theatre, bass, and hands-free calling.</p>
-                    <p><strong>$199</strong></p>
-                    <button class="button-color add-to-cart" data-product="Speaker" data-price="199">Buy Now</button>
-                </div>
-                <div class="box">
-                    <img src="https://via.placeholder.com/300x200?text=Bluetooth+Speaker" alt="Bluetooth Speaker" class="img-fluid">
-                    <h3>Bluetooth Speaker</h3>
-                    <p>Portable Bluetooth speaker with extra bass and 10-hour battery life.</p>
-                    <p><strong>$99</strong></p>
-                    <button class="button-color add-to-cart" data-product="Bluetooth Speaker" data-price="99">Buy Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="products" class="container margin-down">
-            <h2 class="alignment-cat">Smartphones</h2>
-            <div class="line-up"></div>
+    <div class="bg-image">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=iPhone+11+Pro" alt="iPhone 11 Pro" class="img-fluid">
-                    <h3>iPhone 11 Pro</h3>
-                    <p>5.8-inch Super Retina XDR display, A13 Bionic chip, triple-camera system.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="iPhone 11 Pro" data-price="999">Buy Now</button>
-                </div>
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=Samsung+Galaxy+Note10+" alt="Samsung Galaxy Note10+" class="img-fluid">
-                    <h3>Samsung Galaxy Note10+</h3>
-                    <p>6.8-inch Dynamic AMOLED display, S Pen, 12GB RAM, 256GB storage.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="Samsung Galaxy Note10+" data-price="999">Buy Now</button>
-                </div>
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=Huawei+P20" alt="Huawei P20" class="img-fluid">
-                    <h3>Huawei P20</h3>
-                    <p>5.8-inch FHD+ display, Kirin 970 chip, dual Leica cameras.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="Huawei P20" data-price="999">Buy Now</button>
+                <div class="col-md-5">
+                    <h1>Welcome to RAZz Shop</h1>
+                    <p>Discover the latest in smartphones, laptops, and electronics with unbeatable deals.</p>
+                    <a href="#products" class="button-color">Shop Now</a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row margin-down slider">
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Macbook+Pro" alt="Macbook Pro" class="img-fluid">
+                <h3>Macbook Pro</h3>
+                <p>Latest version 2020 of Macbook pro with high definition of resolution, speed, system and security.</p>
+                <button class="button-color add-to-cart" data-product="Macbook Pro" data-price="1299">Buy Now →</button>
+            </div>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Speaker" alt="Speaker" class="img-fluid">
+                <h3>Speaker</h3>
+                <p>High quality Loud speaker with home theatre, bass and handsfree options.</p>
+                <button class="button-color add-to-cart" data-product="Speaker" data-price="199">Buy Now →</button>
+            </div>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Bluetooth+Speaker" alt="Bluetooth Speaker" class="img-fluid">
+                <h3>Bluetooth Speaker</h3>
+                <p>High quality Bluetooth speaker with extra bass and handsfree options.</p>
+                <button class="button-color add-to-cart" data-product="Bluetooth Speaker" data-price="99">Buy Now →</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="margin-down">
+            <h2 class="alignment-cat">Smartphone</h2>
+            <div class="line-up"></div>
             <p class="see-all-margin"><a href="#">See All</a></p>
-        </section>
-
-        <section id="laptops" class="container margin-down">
-            <h2 class="alignment-cat">Laptops</h2>
-            <div class="line-up"></div>
-            <div class="row">
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=Asus+VivoBook" alt="Asus VivoBook" class="img-fluid">
-                    <h3>Asus VivoBook</h3>
-                    <p>15.6-inch FHD display, Intel Core i5, 8GB RAM, 512GB SSD.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="Asus VivoBook" data-price="999">Buy Now</button>
-                </div>
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=Toshiba+Razer" alt="Toshiba Razer" class="img-fluid">
-                    <h3>Toshiba Razer</h3>
-                    <p>14-inch QHD display, AMD Ryzen 7, 16GB RAM, 1TB SSD.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="Toshiba Razer" data-price="999">Buy Now</button>
-                </div>
-                <div class="col-md-4 box">
-                    <img src="https://via.placeholder.com/300x200?text=Xiaomi+Mi+Notebook" alt="Xiaomi Mi Notebook" class="img-fluid">
-                    <h3>Xiaomi Mi Notebook Pro</h3>
-                    <p>15.6-inch 3.5K OLED display, Intel Core i7, 16GB RAM, 512GB SSD.</p>
-                    <p><strong>$999</strong></p>
-                    <button class="button-color add-to-cart" data-product="Xiaomi Mi Notebook Pro" data-price="999">Buy Now</button>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=iPhone+11+Pro" alt="iPhone 11 Pro" class="img-fluid">
+                <h3>Iphone 11 pro</h3>
+                <p>Choose the top brands smartphone with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="iPhone 11 Pro" data-price="999">Buy Now →</button>
             </div>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Samsung+Galaxy+Note10+" alt="Samsung Galaxy Note10+" class="img-fluid">
+                <h3>Samsung Galaxy Note10+</h3>
+                <p>Choose the top brands smartphone with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="Samsung Galaxy Note10+" data-price="999">Buy Now →</button>
+            </div>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Huawei+P20" alt="Huawei P20" class="img-fluid">
+                <h3>Huwai P20</h3>
+                <p>Choose the top brands smartphone with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="Huawei P20" data-price="999">Buy Now →</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="margin-down">
+            <h2 class="alignment-cat">Laptop</h2>
+            <div class="line-up"></div>
             <p class="see-all-margin"><a href="#">See All</a></p>
-        </section>
-
-        <section id="categories" class="container margin-down">
-            <h2 class="alignment-cat">Categories</h2>
-            <div class="line-up"></div>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/150?text=Bag" alt="Bag Category" class="img-fluid">
-                    <h4>Bag</h4>
-                </div>
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/150?text=Beauty" alt="Beauty Category" class="img-fluid">
-                    <h4>Beauty</h4>
-                </div>
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/150?text=Shoes" alt="Shoes Category" class="img-fluid">
-                    <h4>Shoes</h4>
-                </div>
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/150?text=Pen" alt="Pen Category" class="img-fluid">
-                    <h4>Pen</h4>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Asus+VivoBook" alt="Asus VivoBook" class="img-fluid">
+                <h3>Asus VivaBook</h3>
+                <p>Choose the top brands Laptop with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="Asus VivoBook" data-price="999">Buy Now →</button>
             </div>
-        </section>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Toshiba+Razer" alt="Toshiba Razer" class="img-fluid">
+                <h3>Toshiba Razer</h3>
+                <p>Choose the top brands Laptop with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="Toshiba Razer" data-price="999">Buy Now →</button>
+            </div>
+            <div class="col-md-4 box">
+                <img src="https://via.placeholder.com/300x200?text=Xiaomi+Mi+Notebook" alt="Xiaomi Mi Notebook" class="img-fluid">
+                <h3>Xiaomi Mi Notebook Pro</h3>
+                <p>Choose the top brands Laptop with latest version, new model, attractive design, various options, battery durability and 2 years service warantee.</p>
+                <p>$999</p>
+                <button class="button-color add-to-cart" data-product="Xiaomi Mi Notebook Pro" data-price="999">Buy Now →</button>
+            </div>
+        </div>
+    </div>
 
-        <section id="contact" class="container margin-down">
-            <h2 class="alignment-cat">Contact Us</h2>
-            <div class="line-up"></div>
-            <form class="box">
+    <div class="container margin-down">
+        <h2 class="alignment-cat">Categories</h2>
+        <div class="line-up"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150?text=Bag" alt="Bag Category" class="img-fluid">
+                <h4 class="alignment-cat">Bag</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150?text=Beauty" alt="Beauty Category" class="img-fluid">
+                <h4 class="alignment-cat">Beauty</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150?text=Shoes" alt="Shoes Category" class="img-fluid">
+                <h4 class="alignment-cat">Shoes</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150?text=Pen" alt="Pen Category" class="img-fluid">
+                <h4 class="alignment-cat">Pen</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container margin-down">
+        <h2 class="alignment-cat">Contact Us</h2>
+        <div class="line-up"></div>
+        <div class="box">
+            <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -173,18 +169,18 @@
                 </div>
                 <button type="submit" class="button-color">Send</button>
             </form>
-        </section>
+        </div>
+    </div>
 
-        <section id="cart" class="container margin-down">
-            <h2 class="alignment-cat">Your Cart</h2>
-            <div class="line-up"></div>
-            <div id="cart-items"></div>
-            <p><strong>Total: $<span id="cart-total">0</span></strong></p>
-        </section>
-    </main>
+    <div id="cart" class="container margin-down">
+        <h2 class="alignment-cat">Your Cart</h2>
+        <div class="line-up"></div>
+        <div id="cart-items" class="box"></div>
+        <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+    </div>
 
     <footer>
-        <p>© 2020 Touhedul Haque. All rights reserved. Practice e-commerce site by RAZz, Zürich, Switzerland.</p>
+        <p>©touhedul haque. All rights reserved 2020. practice e-commerce site by RAZz, Zürich, Switzerland.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
